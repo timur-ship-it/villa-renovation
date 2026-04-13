@@ -441,6 +441,12 @@ tr.grand-total td:first-child {{ text-align:left; }}
   .summary {{ padding:8px; }}
   .summary th, .summary td {{ font-size:11px; padding:6px; }}
 }}
+@media print {{
+  .header {{ position:static; box-shadow:none; }}
+  .pdf-btn {{ display:none; }}
+  a, a:visited {{ color:#0a58ca; text-decoration:underline; }}
+  .summary a::after {{ content:" (" attr(href) ")"; color:#4b556d; font-size:10px; word-break:break-all; }}
+}}
 </style>
 </head>
 <body>
