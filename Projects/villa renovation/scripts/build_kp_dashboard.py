@@ -17,13 +17,18 @@ DROPBOX_SHARED_FOLDER_URL = 'https://www.dropbox.com/scl/fo/oqjk2cj2hpywhnofiy6g
 
 # Подтверждено HTTP-проверкой (title != "No Access").
 DROPBOX_KP_LINKS = {
-    'D5 (AED)': 'https://www.dropbox.com/scl/fo/oifx7xmuxncq6h19w9e46/AEVj5ALoii0_0Tz3afSdX98?rlkey=iyt8rzh66tfhaje4isijnra1s&st=9xarcbg4&dl=0',
-    'Smart (AED)': 'https://www.dropbox.com/scl/fo/c9v17ay7n2hqrd4ev4nlu/APFkV8Sqj9vBArovlR7rnhw?rlkey=oe5dyg2joatdnjaimt47xn24m&st=h442ofup&dl=0',
-    'Антонович (AED)': 'https://www.dropbox.com/scl/fo/hlq4nu0ysxqxgjcuekdfs/ACUctLKZFFRiF0XJZSbXEwU?rlkey=0fjabdq0qutavere9loda88eo&st=3y6ic03h&dl=0',
+    'TX7 (AED)': 'https://www.dropbox.com/scl/fi/3hw10p93kg1nhymcgsh36/TX7_QT_45.docx?rlkey=f266bhj5x0rdq5qf39mz1py6d&dl=0',
+    'Фирсов (AED)': 'https://www.dropbox.com/scl/fi/d36dxdnnfl3rs8uiv0x3a/.xlsx?rlkey=nd5ihe804ytrs3mq8mamroory&dl=0',
+    'D5 (AED)': 'https://www.dropbox.com/scl/fi/qsubzm929cbbgtffl11fm/Villa-37-Golf-Jumeirah-Park-D5-Renovation-Estimate.xlsx?rlkey=njxueh4m6aswdf66n6i51sd18&dl=0',
+    'K4 (AED)': 'https://www.dropbox.com/scl/fi/1zzrdl5q74b8ye0xe2pdg/K4-5375_Sundails-_-Villa-37-_-Jumeirah-Golf-Estates_K4-5375-4.pdf?rlkey=baxoz9493qs6fsq6hw8gdadix&dl=0',
+    'Smart (AED)': 'https://www.dropbox.com/scl/fi/ywtqivnwoyyddrkcctd9o/Timur-Vagizov-Jumeirah-Golf-Estates-Villa-Renovation-EXECUTION.pdf?rlkey=nzdya3kfzxbfmwhbexmw27hji&dl=0',
+    'Антонович (AED)': 'https://www.dropbox.com/scl/fi/wy9e21vf8xzty7qgblb1b/QUOTATION-FOR-INTERIOR-FIT-OUT-WORKS-DUBAI-HILLS.-13.04.2026-copy.pdf?rlkey=e3moug3h54vpamlgprlkuf0ys&dl=0',
 }
 
 DROPBOX_PORTFOLIO_LINKS = {
-    'D5 (AED)': 'https://www.dropbox.com/scl/fo/oqjk2cj2hpywhnofiy6gj/AOsp58nbR_ROM0cbGmuPUqg/D5/%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%20D5?dl=0&rlkey=vk3kaa8xd7zow6xu99uzfhl96&st=6kxd3zjs',
+    'Фирсов (AED)': 'https://www.dropbox.com/scl/fo/3ssr044ca8318pmncds6x/AIKWIvRCrLuagIayWeF9Si8?rlkey=ia623g2qbz3uiy0at60pp4ok5&dl=0',
+    'D5 (AED)': 'https://www.dropbox.com/scl/fo/ew520abl244k9aloorqs6/AB-l7UcJFvoCE47WTU8jD3I?rlkey=ksstzf8hf0lckxh5kxvtei89q&dl=0',
+    'Антонович (AED)': 'https://www.dropbox.com/scl/fo/0a3b6my1brs09n7yewuyx/AAvWssht8DtKNzFbYHGT7OQ?rlkey=obcn08ixsaa052cxc68pupa2y&dl=0',
 }
 
 # Confirmed from source quote files (excl. VAT where explicitly present)
