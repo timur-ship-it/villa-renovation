@@ -1,10 +1,10 @@
 # Villa Renovation Dashboard
 
-Актуальный HTML-дашборд сравнения КП:
+Публикация:
 
-- `kp-sravnenie-live.html`
+- `kp-sravnenie-live.html` — веб-дашборд (адаптирован под мобильные экраны)
+- `kp-sravnenie-live.pdf` — PDF-версия для скачивания
 
 Источник генерации:
 
 - `../../scripts/build_kp_dashboard.py`
-

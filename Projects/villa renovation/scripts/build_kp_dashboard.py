@@ -11,6 +11,7 @@ from openpyxl import load_workbook
 
 EXCEL_PATH = Path('/Users/Timur/Desktop/Общая папка с гугла/Khizar docs/Jumeirah golf estate/Renovation/Scope_Manual_Input_from_TZ.xlsx')
 OUTPUT_HTML = Path('/Users/Timur/Desktop/Общая папка с гугла/Khizar docs/Jumeirah golf estate/Renovation/КП сравнение.html')
+OUTPUT_PDF_NAME = 'kp-sravnenie-live.pdf'
 VILLA_AREA_M2 = 700.0
 DROPBOX_SHARED_FOLDER_URL = 'https://www.dropbox.com/scl/fo/oqjk2cj2hpywhnofiy6gj/AFtZqpiQ_rO-mR4fdm9T-Nk?rlkey=vk3kaa8xd7zow6xu99uzfhl96&st=6kxd3zjs&dl=0'
 
@@ -370,8 +371,11 @@ def build() -> None:
 * {{ box-sizing: border-box; }}
 body {{ margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; background:#f1f3f7; color:#1a2233; }}
 .header {{ position:sticky; top:0; z-index:50; background:#141a2b; color:#fff; padding:14px 18px; box-shadow:0 2px 8px rgba(0,0,0,.25); }}
+.header-row {{ display:flex; align-items:center; justify-content:space-between; gap:12px; }}
 .header h1 {{ margin:0; font-size:18px; }}
 .header p {{ margin:4px 0 0; font-size:12px; color:#aab4d6; }}
+.pdf-btn {{ display:inline-block; border:1px solid #3a4a78; background:#1e2741; color:#fff; text-decoration:none; border-radius:8px; padding:8px 10px; font-size:12px; font-weight:700; white-space:nowrap; }}
+.pdf-btn:hover {{ background:#253054; }}
 .container {{ max-width:1780px; margin:0 auto; padding:16px; }}
 .cards {{ display:grid; grid-template-columns:repeat(3,minmax(240px,1fr)); gap:10px; margin-bottom:14px; }}
 @media (max-width:1200px) {{ .cards {{ grid-template-columns:repeat(2,minmax(240px,1fr)); }} }}
@@ -391,8 +395,8 @@ body {{ margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system
 .legend .it {{ display:flex; align-items:center; gap:6px; }}
 .legend .sw {{ width:14px; height:14px; border-radius:3px; border:1px solid #ccd3e0; }}
 
-.table-wrap {{ background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.08); overflow-x:hidden; }}
-table {{ width:100%; border-collapse:collapse; table-layout:fixed; }}
+.table-wrap {{ background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.08); overflow-x:auto; -webkit-overflow-scrolling:touch; }}
+table {{ width:100%; min-width:980px; border-collapse:collapse; table-layout:fixed; }}
 #mainTable thead th {{ background:#171d31; color:#fff; padding:10px 8px; font-size:12px; border-bottom:3px solid #303a5a; }}
 #mainTable thead th:nth-child(1) {{ width:{first_col:.4f}%; text-align:left; }}
 #mainTable thead th:nth-child(n+2) {{ width:{other_col:.4f}%; }}
@@ -419,11 +423,32 @@ tr.grand-total td:first-child {{ text-align:left; }}
 .summary th, .summary td {{ border-bottom:1px solid #edf1f7; padding:7px 8px; font-size:12px; text-align:left; vertical-align:top; }}
 .summary th {{ background:#f3f6fc; color:#1b2438; }}
 .rec-cell {{ line-height:1.45; }}
+@media (max-width:900px) {{
+  .header {{ position:static; padding:10px 12px; }}
+  .header-row {{ align-items:flex-start; flex-direction:column; }}
+  .header h1 {{ font-size:16px; }}
+  .header p {{ font-size:11px; }}
+  .pdf-btn {{ padding:7px 9px; font-size:11px; }}
+  .container {{ padding:10px; }}
+  .cards {{ grid-template-columns:1fr; gap:8px; }}
+  .card {{ padding:8px; }}
+  .card .name {{ font-size:14px; }}
+  .card .line b {{ font-size:15px; }}
+  .legend {{ font-size:11px; padding:8px 10px; }}
+  #mainTable thead th {{ font-size:11px; padding:8px 6px; }}
+  tr.item-row td {{ font-size:11px; padding:6px 6px; }}
+  tr.item-row .sub {{ font-size:9px; }}
+  .summary {{ padding:8px; }}
+  .summary th, .summary td {{ font-size:11px; padding:6px; }}
+}}
 </style>
 </head>
 <body>
 <div class="header">
-  <h1>Сравнение КП подрядчиков — по разделам ТЗ</h1>
+  <div class="header-row">
+    <h1>Сравнение КП подрядчиков — по разделам ТЗ</h1>
+    <a class="pdf-btn" href="{OUTPUT_PDF_NAME}" download>Скачать PDF</a>
+  </div>
   <p>Источник строк: Scope_Manual_Input_from_TZ.xlsx. Площадь для расчета стоимости работ: {int(VILLA_AREA_M2)} м².</p>
 </div>
 <div class="container">
