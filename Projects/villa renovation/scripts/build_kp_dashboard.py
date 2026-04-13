@@ -11,7 +11,7 @@ from openpyxl import load_workbook
 
 EXCEL_PATH = Path('/Users/Timur/Desktop/Общая папка с гугла/Khizar docs/Jumeirah golf estate/Renovation/Scope_Manual_Input_from_TZ.xlsx')
 OUTPUT_HTML = Path('/Users/Timur/Desktop/Общая папка с гугла/Khizar docs/Jumeirah golf estate/Renovation/КП сравнение.html')
-OUTPUT_PDF_NAME = 'kp-sravnenie-live.pdf'
+OUTPUT_PDF_NAME = 'kp-sravnenie-live-v2.pdf'
 VILLA_AREA_M2 = 700.0
 DROPBOX_SHARED_FOLDER_URL = 'https://www.dropbox.com/scl/fo/oqjk2cj2hpywhnofiy6gj/AFtZqpiQ_rO-mR4fdm9T-Nk?rlkey=vk3kaa8xd7zow6xu99uzfhl96&st=6kxd3zjs&dl=0'
 
