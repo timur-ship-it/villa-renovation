@@ -6582,6 +6582,7 @@ function initAbrasiveSizeSelectors() {
     const id = Number(card.dataset.id || 0);
     const options = ABRASIVE_SIZE_OPTIONS[id];
     if (!options || options.length === 0) return;
+    if (card.closest('#cat-tapes')) return;
 
     const row = card.querySelector('.prod-inputs');
     if (!row || row.querySelector(`[data-size="${id}"]`)) return;
