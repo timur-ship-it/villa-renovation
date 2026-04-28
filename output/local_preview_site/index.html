@@ -400,6 +400,16 @@ body.cart-open{overflow:hidden}
 .prod-inputs{flex-wrap:wrap;align-items:flex-end}
 .size-wrap{flex:1 1 220px;min-width:0}
 .size-select{width:100%;min-width:0}
+#cat-rags .product{align-items:center!important}
+#cat-rags .prod-img{width:118px!important;min-height:101px!important;height:101px!important;align-self:center!important}
+#cat-rags .prod-img{display:flex!important;align-items:center!important;justify-content:center!important}
+#cat-rags .prod-img img{object-fit:contain!important;object-position:center center!important;background:#fff;padding:2px}
+#cat-rags .prod-inputs{display:grid;grid-template-columns:160px 220px minmax(280px,1fr);gap:10px;align-items:end}
+#cat-rags .prod-inputs > div{min-width:0}
+#cat-rags .size-wrap{min-width:0}
+@media(max-width:760px){#cat-rags .product{grid-template-columns:105px minmax(0,1fr)!important;align-items:center!important}#cat-rags .prod-img{width:105px!important;height:90px!important;min-height:90px!important;display:flex!important;align-items:center!important;justify-content:center!important;align-self:center!important}#cat-rags .prod-img img{object-fit:contain!important;object-position:center center!important;padding:2px}#cat-rags .prod-inputs{display:flex;flex-direction:column;gap:6px;align-items:stretch}}
+
+
 .note-input{min-width:0}
 .size-variants{width:100%;overflow:hidden}
 .size-variants-list{width:100%}
@@ -421,6 +431,13 @@ body.cart-open{overflow:hidden}
 /* PPE grouping headers */
 .ppe-season-header{margin:14px 0 8px;padding:10px 14px;border-radius:10px;border:1px solid #a7f3d0;background:#ecfdf5;color:#065f46;font-size:14px;font-weight:900}
 .ppe-func-header{margin:10px 0 6px;padding:7px 12px;border-radius:9px;border:1px solid #cbd5e1;background:#f8fafc;color:#334155;font-size:12px;font-weight:800}
+
+/* RAGS_IMAGE_SCALE_V2 */
+#cat-rags .product{align-items:center!important}
+#cat-rags .prod-img{width:124px!important;min-height:106px!important;height:106px!important;align-self:center!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#fff!important}
+#cat-rags .prod-img img{width:auto!important;height:90%!important;max-width:100%!important;object-fit:contain!important;object-position:center center!important;display:block!important;margin:auto!important;background:#fff;padding:0!important}
+@media(max-width:760px){#cat-rags .product{grid-template-columns:110px minmax(0,1fr)!important;align-items:center!important}#cat-rags .prod-img{width:110px!important;height:95px!important;min-height:95px!important;align-self:center!important;display:flex!important;align-items:center!important;justify-content:center!important}}
+
 </style>
 </head>
 <body>
@@ -2789,7 +2806,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="48" data-search="термоусадка среднестенная с клеевым слоем коэфф. 3:1, -45…+125°c, внутренний термоклей, герметичная усадка, 24 размера ø6-230 мм">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-001.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_a_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2811,7 +2828,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="49" data-search="термоусадка толстостенная с клеевым слоем коэфф. 3:1, -45…+110°c, 1 кв, толстая стенка для механической защиты и подземной прокладки">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-002.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_la_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2833,7 +2850,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="50" data-search="трубка птфэ (тефлоновая) жёсткая цельный птфэ, -65…+200°c, химически инертна, огнестойкость ul224">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-003.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_a4_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2855,7 +2872,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="51" data-search="термоусадка из птфэ (тефлон) коэфф. 1.7:1, -65…+200°c, химически инертна, прозрачная или белая, 16 размеров">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-004.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_c_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2877,7 +2894,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="52" data-search="термоусадка из пвдф (высокотемпературная) коэфф. 2:1, -55…+175°c, отличная химическая и uv-стойкость">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-005.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_cul_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2899,7 +2916,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="53" data-search="термоусадка из фторкаучука viton коэфф. 2:1, -55…+200°c, стойка к топливу, маслам, растворителям">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-006.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_d_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2921,7 +2938,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="54" data-search="термоусадка epdm (каучуковая) коэфф. 2:1, -45…+125°c, мягкая резиновая поверхность, 11 размеров ø6-70 мм">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-007.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_a2_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2943,7 +2960,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="55" data-search="термоусадка общего назначения (ul сертификат) коэфф. 2:1, -55…+125°c, ul224, 600в, разные цвета, rohs">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-008.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_b_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2965,7 +2982,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="56" data-search="термоусадка двустенная с клеем (3:1 / 4:1) коэфф. 3:1 или 4:1, -40…+125°c, термоклей внутри, водонепроницаемая">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-003.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_lb_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -2987,7 +3004,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="57" data-search="оплётка расширяемая pet (кабельный чулок) расширение 1.4:1, -50…+150°c, 43 варианта ø, самозакрывающееся плетение">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-010.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_fz_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3009,7 +3026,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="58" data-search="маркировочные термоусадочные трубки (под печать) коэфф. 2:1/3:1, -55…+125°c, 10 цветов, для термотрансферных принтеров, до mil-std">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-011.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_f3z_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3031,7 +3048,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="59" data-search="термоусадка для среднего напряжения для концевых и соединительных муфт силовых кабелей среднего напряжения">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-012.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_nhr2_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3053,7 +3070,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="60" data-search="холодная усадка (без нагрева) предварительно растянутый силикон/epdm, установка вытягиванием сердечника — без фена!">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-013.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_nhr4_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3075,7 +3092,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="61" data-search="маркировочные пвх-трубки для кабеля мягкий пвх, печать термотрансфером, различные ø, нарезка по длине">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-014.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/SumitubeR-1.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3097,7 +3114,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="62" data-search="этикетки для термотрансферной печати полиэстер/винил, самоклеящиеся, прочные, для маркировки оборудования и кабелей">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-015.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/heatshrink_sumitube/sumitube_v300v_img.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3119,7 +3136,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="63" data-search="изолента пвх электротехническая ширина 12-50 мм, различные цвета, автомобильный/промышленный класс">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-010.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/tapes/electrical_tape.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3141,7 +3158,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="64" data-search="малярная лента (крепированная) крепированная бумага, различная ширина, чистое удаление, термостойкая">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-017.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/tapes/masking_tape.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3163,7 +3180,7 @@ body.cart-open{overflow:hidden}
 </div>
 <div class="product" data-id="65" data-search="алюминиевая лента самоклеящаяся hvac-класс, теплоотражающая, для герметизации воздуховодов и стыков утеплителя">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/tml-018.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/tapes/aluminum_tape.jpg" style="width:100%;height:100%;object-fit:cover"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
@@ -3722,251 +3739,178 @@ body.cart-open{overflow:hidden}
 <div class="cat-section" data-cat="rags" id="cat-rags">
 <div class="cat-header" style="background:linear-gradient(135deg,#ccfbf1,#fff);border:2px solid #14b8a625">
 <h2 style="color:#14b8a6">🧹 Ветошь и протирочные материалы</h2>
-<span class="cat-count" style="color:#14b8a6">11 позиций</span>
+<span class="cat-count" style="color:#14b8a6">7 позиций</span>
 </div>
-<div class="product" data-id="87" data-search="сухие промышленные салфетки (нетканые, спанлейс) пп/вискоза/пэт, 30-80 г/м², безворсовые, для промышленной протирки">
+<div class="prod-desc" style="margin:0 0 8px 0;color:#0f766e;font-size:12px">Кол-во — количество упаковок. Параметры упаковки см. в описании карточки.</div>
+<div class="product" data-id="87" data-search="ветошь цветная смесовая протирочная kleenrags kr-c05">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-001.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/rags_upload/selected/kr-01.png" style="width:auto;height:90%;max-width:100%;object-fit:contain;object-position:center center;display:block;margin:auto;background:#fff;padding:0"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
-<span class="prod-name">Сухие промышленные салфетки (нетканые, спанлейс)</span>
+<span class="prod-name">Экономичная цветная смесовая протирочная ветошь</span>
 </div>
-<div class="prod-desc">ПП/вискоза/ПЭТ, 30-80 г/м², безворсовые, для промышленной протирки</div>
+<div class="prod-desc">Материал: переработанный полиэстер 35% / переработанный хлопок 65%.<br/>Плотность: 180-220 г/м².<br/>Размер: смешанный, обычно 30×30-50×50 см.<br/>MOQ: 500 кг.<br/>Функционал: универсальная промышленная протирка, цветовое кодирование, впитывание масел и СОЖ.</div>
 <div class="prod-inputs">
 <div>
 <label>Кол-во</label>
 <input class="qty-input" data-qty="87" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
 </div>
-<span class="unit-label">рулон / пачка</span>
+<div class="size-wrap">
+<label>Размер / упаковка</label>
+<select class="size-select" data-size="87" onchange="saveState()"><option value="">выбрать...</option><option value="30x30 см">30x30 см</option><option value="40x40 см">40x40 см</option><option value="50x50 см">50x50 см</option><option value="микс 30x30-50x50 см">микс 30x30-50x50 см</option></select>
+</div>
 <div style="flex:1">
 <label>Примечание</label>
-<input class="note-input" data-note="87" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
+<input class="note-input" data-note="87" oninput="saveState()" placeholder="комментарий…" type="text"/>
 </div>
 </div>
 </div>
-</div>
-<div class="product" data-id="88" data-search="салфетки усиленные целлюлоза+пп целлюлоза+пп, 50-80 г/м², высокая впитываемость, тиснёные или гладкие">
+</div><div class="product" data-id="88" data-search="ветошь светлая смешанная off-white kleenrags kr-c06">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-002.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/rags_upload/selected/kr-02.png" style="width:auto;height:90%;max-width:100%;object-fit:contain;object-position:center center;display:block;margin:auto;background:#fff;padding:0"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
-<span class="prod-name">Салфетки усиленные целлюлоза+ПП</span>
+<span class="prod-name">Смешанная светлая промышленная протирочная ветошь</span>
 </div>
-<div class="prod-desc">Целлюлоза+ПП, 50-80 г/м², высокая впитываемость, тиснёные или гладкие</div>
+<div class="prod-desc">Материал: смесь poly-cotton, синтетических волокон, хлопка и фланели.<br/>Плотность: 160-250 г/м² (переменная).<br/>Размер: смешанный, обычно 30×30-50×50 см.<br/>MOQ: 500 кг.<br/>Функционал: универсальная протирка от деликатной очистки до тяжелых загрязнений.</div>
 <div class="prod-inputs">
 <div>
 <label>Кол-во</label>
 <input class="qty-input" data-qty="88" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
 </div>
-<span class="unit-label">рулон / коробка</span>
+<div class="size-wrap">
+<label>Размер / упаковка</label>
+<select class="size-select" data-size="88" onchange="saveState()"><option value="">выбрать...</option><option value="30x30 см">30x30 см</option><option value="40x40 см">40x40 см</option><option value="50x50 см">50x50 см</option><option value="микс 30x30-50x50 см">микс 30x30-50x50 см</option></select>
+</div>
 <div style="flex:1">
 <label>Примечание</label>
-<input class="note-input" data-note="88" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
+<input class="note-input" data-note="88" oninput="saveState()" placeholder="комментарий…" type="text"/>
 </div>
 </div>
 </div>
-</div>
-<div class="product" data-id="89" data-search="влажные салфетки (детские/для животных) вискоза+пэт, 40-60 г/м², мягкая формула">
+</div><div class="product" data-id="89" data-search="ветошь темная из б/у футболок kleenrags kr-t01 kr-t02 kr-t03">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-003.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/rags_upload/selected/kr-03.png" style="width:auto;height:90%;max-width:100%;object-fit:contain;object-position:center center;display:block;margin:auto;background:#fff;padding:0"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
-<span class="prod-name">Влажные салфетки (детские/для животных)</span>
+<span class="prod-name">Экономичная темная ветошь из б/у футболок</span>
 </div>
-<div class="prod-desc">Вискоза+ПЭТ, 40-60 г/м², мягкая формула</div>
+<div class="prod-desc">Материал: переработанный хлопок 80% / полиэстер 20%.<br/>Плотность: около 200 г/м².<br/>Размер: смешанный, обычно 30×30-50×50 см.<br/>MOQ: 500 кг.<br/>Функционал: ежедневная грубая очистка масел, краски, инструмента и полов в цехах.</div>
 <div class="prod-inputs">
 <div>
 <label>Кол-во</label>
 <input class="qty-input" data-qty="89" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
 </div>
-<span class="unit-label">пачка 80-100 шт.</span>
+<div class="size-wrap">
+<label>Размер / упаковка</label>
+<select class="size-select" data-size="89" onchange="saveState()"><option value="">выбрать...</option><option value="30x30 см">30x30 см</option><option value="40x40 см">40x40 см</option><option value="50x50 см">50x50 см</option><option value="микс 30x30-50x50 см">микс 30x30-50x50 см</option></select>
+</div>
 <div style="flex:1">
 <label>Примечание</label>
-<input class="note-input" data-note="89" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
+<input class="note-input" data-note="89" oninput="saveState()" placeholder="комментарий…" type="text"/>
 </div>
 </div>
 </div>
-</div>
-<div class="product" data-id="90" data-search="антибактериальные салфетки (банка) вискоза+пэт, 40 г/м², бензалкония хлорид — дезинфекция поверхностей">
+</div><div class="product" data-id="90" data-search="ветошь неотбеленная heavy duty oil grease kleenrags kr-u01">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-004.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/rags_upload/selected/kr-04.png" style="width:auto;height:90%;max-width:100%;object-fit:contain;object-position:center center;display:block;margin:auto;background:#fff;padding:0"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
-<span class="prod-name">Антибактериальные салфетки (банка)</span>
+<span class="prod-name">Высоковпитывающая неотбеленная хлопковая ветошь</span>
 </div>
-<div class="prod-desc">Вискоза+ПЭТ, 40 г/м², бензалкония хлорид — дезинфекция поверхностей</div>
+<div class="prod-desc">Материал: переработанный хлопок 70% / полиэстер 30%.<br/>Плотность: около 200 г/м².<br/>Размер: смешанный, обычно 30×30-50×50 см.<br/>MOQ: 500 кг.<br/>Функционал: тяжелая протирка масел, смазок и металлической пыли (машиностроение, литейка, ремонт).</div>
 <div class="prod-inputs">
 <div>
 <label>Кол-во</label>
 <input class="qty-input" data-qty="90" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
 </div>
-<span class="unit-label">банка 100 шт.</span>
+<div class="size-wrap">
+<label>Размер / упаковка</label>
+<select class="size-select" data-size="90" onchange="saveState()"><option value="">выбрать...</option><option value="30x30 см">30x30 см</option><option value="40x40 см">40x40 см</option><option value="50x50 см">50x50 см</option><option value="микс 30x30-50x50 см">микс 30x30-50x50 см</option></select>
+</div>
 <div style="flex:1">
 <label>Примечание</label>
-<input class="note-input" data-note="90" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
+<input class="note-input" data-note="90" oninput="saveState()" placeholder="комментарий…" type="text"/>
 </div>
 </div>
 </div>
-</div>
-<div class="product" data-id="91" data-search="антибактериальные салфетки (ведро) 100% пп с абразивной текстурой, 40 г/м², для интенсивной чистки">
+</div><div class="product" data-id="91" data-search="ветошь микрофибра безворсовая kleenrags kr-m01">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-005.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/rags_upload/selected/kr-05.png" style="width:auto;height:90%;max-width:100%;object-fit:contain;object-position:center center;display:block;margin:auto;background:#fff;padding:0"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
-<span class="prod-name">Антибактериальные салфетки (ведро)</span>
+<span class="prod-name">Безворсовая микрофибровая протирочная ветошь</span>
 </div>
-<div class="prod-desc">100% ПП с абразивной текстурой, 40 г/м², для интенсивной чистки</div>
+<div class="prod-desc">Материал: полиэстер 80% / нейлон 20%.<br/>Плотность: около 200 г/м².<br/>Размер: смешанный, обычно 30×30-50×50 см.<br/>MOQ: 500 кг.<br/>Функционал: безворсовая и безопасная очистка чувствительных поверхностей, высокая впитываемость.</div>
 <div class="prod-inputs">
 <div>
 <label>Кол-во</label>
 <input class="qty-input" data-qty="91" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
 </div>
-<span class="unit-label">ведро 225 шт.</span>
+<div class="size-wrap">
+<label>Размер / упаковка</label>
+<select class="size-select" data-size="91" onchange="saveState()"><option value="">выбрать...</option><option value="30x30 см">30x30 см</option><option value="40x40 см">40x40 см</option><option value="50x50 см">50x50 см</option><option value="микс 30x30-50x50 см">микс 30x30-50x50 см</option></select>
+</div>
 <div style="flex:1">
 <label>Примечание</label>
-<input class="note-input" data-note="91" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
+<input class="note-input" data-note="91" oninput="saveState()" placeholder="комментарий…" type="text"/>
 </div>
 </div>
 </div>
-</div>
-<div class="product" data-id="92" data-search="антибактериальные салфетки (центральная вытяжка) спанлейс 10% вискоза + 90% пэт, 35 г/м², 1100 листов, антибактериальные">
+</div><div class="product" data-id="92" data-search="ветошь хлопковая разноцветная kleenrags kr-c02">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-006.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/rags_upload/selected/kr-06.png" style="width:auto;height:90%;max-width:100%;object-fit:contain;object-position:center center;display:block;margin:auto;background:#fff;padding:0"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
-<span class="prod-name">Антибактериальные салфетки (центральная вытяжка)</span>
+<span class="prod-name">Разноцветная хлопковая ветошь для промышленного применения</span>
 </div>
-<div class="prod-desc">Спанлейс 10% вискоза + 90% ПЭТ, 35 г/м², 1100 листов, антибактериальные</div>
+<div class="prod-desc">Материал: хлопок 65% / полиэстер 35%.<br/>Плотность: около 200 г/м².<br/>Размер: 40×40 см.<br/>MOQ: 500 кг.<br/>Функционал: универсальная промышленная протирка с хорошим водо- и маслопоглощением.</div>
 <div class="prod-inputs">
 <div>
 <label>Кол-во</label>
 <input class="qty-input" data-qty="92" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
 </div>
-<span class="unit-label">рулон 1100 шт.</span>
+<div class="size-wrap">
+<label>Размер / упаковка</label>
+<select class="size-select" data-size="92" onchange="saveState()"><option value="">выбрать...</option><option value="40x40 см">40x40 см</option></select>
+</div>
 <div style="flex:1">
 <label>Примечание</label>
-<input class="note-input" data-note="92" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
+<input class="note-input" data-note="92" oninput="saveState()" placeholder="комментарий…" type="text"/>
 </div>
 </div>
 </div>
-</div>
-<div class="product" data-id="93" data-search="полотенца из микрофибры (многоразовые) 80% полиэстер + 20% полиамид, 180-300 г/м², 5 цветов, стирка в машине">
+</div><div class="product" data-id="93" data-search="ветошь хлопковая белая kleenrags kr-c03">
 <div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-007.jpg" style="width:100%;height:100%;object-fit:cover"/>
+<img alt="" loading="lazy" src="images/rags_upload/selected/kr-07.png" style="width:auto;height:90%;max-width:100%;object-fit:contain;object-position:center center;display:block;margin:auto;background:#fff;padding:0"/>
 </div>
 <div class="prod-body">
 <div class="prod-top">
-<span class="prod-name">Полотенца из микрофибры (многоразовые)</span>
+<span class="prod-name">Белая хлопковая ветошь для оборудования</span>
 </div>
-<div class="prod-desc">80% полиэстер + 20% полиамид, 180-300 г/м², 5 цветов, стирка в машине</div>
+<div class="prod-desc">Материал: хлопок 65% / полиэстер 35%.<br/>Плотность: около 200 г/м².<br/>Размер: 40×40 см.<br/>MOQ: 500 кг.<br/>Функционал: чистовая промышленная протирка для оборудования и зон с повышенными требованиями к чистоте.</div>
 <div class="prod-inputs">
 <div>
 <label>Кол-во</label>
 <input class="qty-input" data-qty="93" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
 </div>
-<span class="unit-label">упак.</span>
+<div class="size-wrap">
+<label>Размер / упаковка</label>
+<select class="size-select" data-size="93" onchange="saveState()"><option value="">выбрать...</option><option value="40x40 см">40x40 см</option></select>
+</div>
 <div style="flex:1">
 <label>Примечание</label>
-<input class="note-input" data-note="93" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
+<input class="note-input" data-note="93" oninput="saveState()" placeholder="комментарий…" type="text"/>
 </div>
 </div>
 </div>
-</div>
-<div class="product" data-id="94" data-search="одноразовые полотенца для парикмахерских 100% вискоза, 50 г/м², белые, одноразовые">
-<div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-008.jpg" style="width:100%;height:100%;object-fit:cover"/>
-</div>
-<div class="prod-body">
-<div class="prod-top">
-<span class="prod-name">Одноразовые полотенца для парикмахерских</span>
-</div>
-<div class="prod-desc">100% вискоза, 50 г/м², белые, одноразовые</div>
-<div class="prod-inputs">
-<div>
-<label>Кол-во</label>
-<input class="qty-input" data-qty="94" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
-</div>
-<span class="unit-label">пачка 50 шт.</span>
-<div style="flex:1">
-<label>Примечание</label>
-<input class="note-input" data-note="94" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
-</div>
-</div>
-</div>
-</div>
-<div class="product" data-id="95" data-search="рулон бамбук/вискоза многоразовый 30% бамбук + 70% вискоза, 95 г/м², перфорация, стирка до 15 раз">
-<div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-009.jpg" style="width:100%;height:100%;object-fit:cover"/>
-</div>
-<div class="prod-body">
-<div class="prod-top">
-<span class="prod-name">Рулон бамбук/вискоза многоразовый</span>
-</div>
-<div class="prod-desc">30% бамбук + 70% вискоза, 95 г/м², перфорация, стирка до 15 раз</div>
-<div class="prod-inputs">
-<div>
-<label>Кол-во</label>
-<input class="qty-input" data-qty="95" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
-</div>
-<span class="unit-label">рулон 25 листов</span>
-<div style="flex:1">
-<label>Примечание</label>
-<input class="note-input" data-note="95" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
-</div>
-</div>
-</div>
-</div>
-<div class="product" data-id="96" data-search="нетканые полотна в рулонах (спанлейс/мелтблаун/sms) пп/вискоза/пэт, 20-200+ г/м², для конверсии в салфетки, oem">
-<div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-010.jpg" style="width:100%;height:100%;object-fit:cover"/>
-</div>
-<div class="prod-body">
-<div class="prod-top">
-<span class="prod-name">Нетканые полотна в рулонах (спанлейс/мелтблаун/SMS)</span>
-</div>
-<div class="prod-desc">ПП/вискоза/ПЭТ, 20-200+ г/м², для конверсии в салфетки, OEM</div>
-<div class="prod-inputs">
-<div>
-<label>Кол-во</label>
-<input class="qty-input" data-qty="96" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
-</div>
-<span class="unit-label">джамбо-рулон</span>
-<div style="flex:1">
-<label>Примечание</label>
-<input class="note-input" data-note="96" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
-</div>
-</div>
-</div>
-</div>
-<div class="product" data-id="97" data-search="хлопчатобумажная ветошь сортированная (8 сортов) белый/цветной трикотаж, махра, фланель, флис — рассортировано по качеству">
-<div class="prod-img">
-<img alt="" loading="lazy" src="images/rag-011.jpg" style="width:100%;height:100%;object-fit:cover"/>
-</div>
-<div class="prod-body">
-<div class="prod-top">
-<span class="prod-name">Хлопчатобумажная ветошь сортированная (8 сортов)</span>
-</div>
-<div class="prod-desc">Белый/цветной трикотаж, махра, фланель, флис — рассортировано по качеству</div>
-<div class="prod-inputs">
-<div>
-<label>Кол-во</label>
-<input class="qty-input" data-qty="97" min="0" oninput="onQtyChange(this)" placeholder="—" type="number"/>
-</div>
-<span class="unit-label">кипа</span>
-<div style="flex:1">
-<label>Примечание</label>
-<input class="note-input" data-note="97" oninput="saveState()" placeholder="размер, спецификация…" type="text"/>
-</div>
-</div>
-</div>
-</div>
-</div>
+</div></div>
 <div class="cat-section" data-cat="geo" id="cat-geo">
 <div class="cat-header" style="background:linear-gradient(135deg,#ffedd5,#fff);border:2px solid #f9731625">
 <h2 style="color:#f97316">🏗️ Геосинтетика и упаковка</h2>
